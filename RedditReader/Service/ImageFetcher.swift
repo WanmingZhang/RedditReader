@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import OAuthSwift
 
 protocol ImageFetchProtocol {
     var imageCache: NSCache<NSString, UIImage> { get set }
@@ -16,10 +17,11 @@ protocol ImageFetchProtocol {
     func fetchImageFromUrl(_ url: URL, completion: @escaping (Result<UIImage, Error>) -> Void) -> UUID?
     func cancelLoad(_ uuid: UUID)
 }
+
 class ImageFetcher: ImageFetchProtocol {
     var imageCache = NSCache<NSString, UIImage>()
     var runningReqs = Dictionary<UUID, URLSessionDataTask>()
-
+    
     func getImageFromCache(_ urlStr: NSString) -> UIImage? {
         return imageCache.object(forKey: urlStr)
     }
@@ -33,6 +35,7 @@ class ImageFetcher: ImageFetchProtocol {
         }
         // 2 create uuid for each running task
         let uuid = UUID()
+        
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             guard let self = self else { return }
             //3

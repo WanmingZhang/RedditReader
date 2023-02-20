@@ -32,10 +32,10 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yi6-XB-7UJ">
-                                                    <rect key="frame" x="44" y="27" width="241" height="96"/>
+                                                    <rect key="frame" x="44" y="27" width="211" height="96"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fu0-kS-RCQ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="241" height="16"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="211" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="16" id="1m0-yj-eT5"/>
                                                             </constraints>
@@ -43,13 +43,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXU-rD-q9z">
-                                                            <rect key="frame" x="0.0" y="46" width="241" height="0.0"/>
+                                                            <rect key="frame" x="0.0" y="46" width="211" height="0.0"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" systemColor="systemGrayColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="240" verticalCompressionResistancePriority="760" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uq-1m-bwM">
-                                                            <rect key="frame" x="0.0" y="76" width="241" height="20"/>
+                                                            <rect key="frame" x="0.0" y="76" width="211" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -57,29 +57,29 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Ws-sm-Mci">
-                                                    <rect key="frame" x="293" y="35" width="80" height="80"/>
+                                                    <rect key="frame" x="263" y="27" width="100" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="80" id="Dpx-3x-Ekf"/>
-                                                        <constraint firstAttribute="width" constant="80" id="x4U-ld-XT9"/>
+                                                        <constraint firstAttribute="height" constant="100" id="uX2-ei-SLO"/>
+                                                        <constraint firstAttribute="width" constant="100" id="x4U-ld-XT9"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Yi6-XB-7UJ" firstAttribute="top" secondItem="mDW-vM-46H" secondAttribute="topMargin" constant="16" id="4iO-f9-l34"/>
-                                                <constraint firstAttribute="trailing" secondItem="9Ws-sm-Mci" secondAttribute="trailing" constant="20" symbolic="YES" id="4wK-a5-lSl"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Ws-sm-Mci" secondAttribute="trailing" constant="30" id="4wK-a5-lSl"/>
                                                 <constraint firstItem="Yi6-XB-7UJ" firstAttribute="leading" secondItem="mDW-vM-46H" secondAttribute="leadingMargin" constant="24" id="9Ip-Xm-HpY"/>
+                                                <constraint firstItem="9Ws-sm-Mci" firstAttribute="top" secondItem="Yi6-XB-7UJ" secondAttribute="top" id="NaB-FL-yBd"/>
                                                 <constraint firstAttribute="trailing" secondItem="UqQ-s7-ugT" secondAttribute="trailing" constant="16" id="OgF-7W-Xoi"/>
                                                 <constraint firstItem="9Ws-sm-Mci" firstAttribute="leading" secondItem="Yi6-XB-7UJ" secondAttribute="trailing" constant="8" id="bfh-e5-m6z"/>
                                                 <constraint firstItem="UqQ-s7-ugT" firstAttribute="leading" secondItem="mDW-vM-46H" secondAttribute="leading" constant="16" id="dWD-pR-j4e"/>
-                                                <constraint firstItem="Yi6-XB-7UJ" firstAttribute="centerY" secondItem="9Ws-sm-Mci" secondAttribute="centerY" id="jQX-ID-ZS5"/>
                                                 <constraint firstItem="UqQ-s7-ugT" firstAttribute="top" secondItem="mDW-vM-46H" secondAttribute="top" constant="8" id="lz9-Us-EKi"/>
-                                                <constraint firstItem="9Ws-sm-Mci" firstAttribute="centerY" secondItem="mDW-vM-46H" secondAttribute="centerY" id="tcS-7M-ywW"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Yi6-XB-7UJ" secondAttribute="bottom" constant="16" id="w0e-l7-nP7"/>
                                                 <constraint firstAttribute="bottom" secondItem="UqQ-s7-ugT" secondAttribute="bottom" constant="8" id="yfZ-Xr-XIk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="borderView" destination="UqQ-s7-ugT" id="a7u-i3-InR"/>
+                                            <outlet property="imgHeight" destination="uX2-ei-SLO" id="nfo-iJ-TrW"/>
                                             <outlet property="name" destination="AXU-rD-q9z" id="cxq-oD-fEo"/>
                                             <outlet property="subReddit" destination="Fu0-kS-RCQ" id="BvP-Ue-sPD"/>
                                             <outlet property="thumbnail" destination="9Ws-sm-Mci" id="nmp-DJ-zoM"/>

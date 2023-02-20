@@ -6,17 +6,18 @@
 //
 
 import UIKit
-import OAuth2_Swift
+import OAuthSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        signInReddit()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -52,9 +53,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 return
             }
             if url.host == "oauth-callback" {
-                //OAuthSwift.handle(url: url)
+                OAuthSwift.handle(url: url)
                 
             }
+    }
+    
+    // MARK: OAuthSwift
+    func signInReddit() {
+        let oauthswift = OAuthManager.shared.oauthswift
+        guard let rwURL = URL(string: "RedditReader://oauth-callback") else { return }
+
+        let handle = oauthswift.authorize(
+                withCallbackURL: rwURL,
+                scope: "identity read", state:"reddit") { result in
+                switch result {
+                case .success(let (credential, response, parameters)):
+                  print("credential.oauthToken = \(credential.oauthToken)")
+                  // Do your request
+                case .failure(let error):
+                    print("oauth error = \(error.description)")
+                }
+        }
     }
 
 }

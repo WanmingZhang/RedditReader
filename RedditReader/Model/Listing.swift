@@ -36,6 +36,9 @@ struct ChildData : Decodable {
     let subreddit: String?
     let numComments: Int?
     let preview: listImage?
+    let thumbnail: String?
+    let thumbnail_height: Int?
+    let thumbnail_width: Int?
 
     enum CodingKeys: String, CodingKey {
         case author = "author"
@@ -44,6 +47,9 @@ struct ChildData : Decodable {
         case subreddit = "subreddit"
         case numComments = "num_comments"
         case preview = "preview"
+        case thumbnail = "thumbnail"
+        case thumbnail_height = "thumbnail_height"
+        case thumbnail_width = "thumbnail_width"
     }
 }
 struct Post: Decodable {

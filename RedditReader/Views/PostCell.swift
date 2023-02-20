@@ -13,6 +13,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var thumbnail: UIImageView!
+    @IBOutlet weak var imgHeight: NSLayoutConstraint!
     let imageFetcher = ImageFetcher()
     var onReuse: () -> Void = {}
     
@@ -43,27 +44,28 @@ class PostCell: UITableViewCell {
     }
     
     func loadFlagImage(_ post: ChildData) {
-        guard let images = post.preview?.images else {
+        guard let urlStr = post.thumbnail else {
             return
         }
-        guard let urlStr = images[0].resolutions?[0].url else {
-            return
-        }
-        
         guard let url = URL(string: urlStr) else {
             return
         }
         print("thumbnail url = \(urlStr)")
+        
         let token = imageFetcher.fetchImageFromUrl(url) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let image):
                 self.thumbnail.image = image
+                if let height =  post.thumbnail_height, let width = post.thumbnail_width {
+                    let ratio: CGFloat = CGFloat(height / width)
+                    self.imgHeight.constant =  ratio * 100.0
+                }
             case .failure(let error):
                 print("Fetching image error: \(error.localizedDescription)")
             }
         }
-        
+
         if let token = token {
             onReuse = { [weak self] in
                 guard let self = self else { return }

@@ -25,6 +25,7 @@
 		C7427D3929A1AAD30004478B /* ListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7427D3829A1AAD30004478B /* ListType.swift */; };
 		C7427D3B29A1B2FA0004478B /* Dictionary+RedditReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7427D3A29A1B2FA0004478B /* Dictionary+RedditReader.swift */; };
 		C7427D3E29A1F1BA0004478B /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7427D3D29A1F1BA0004478B /* ImageFetcher.swift */; };
+		C7427D4229A423D60004478B /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7427D4129A423D60004478B /* OAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		C7427D3829A1AAD30004478B /* ListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListType.swift; sourceTree = "<group>"; };
 		C7427D3A29A1B2FA0004478B /* Dictionary+RedditReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+RedditReader.swift"; sourceTree = "<group>"; };
 		C7427D3D29A1F1BA0004478B /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		C7427D4129A423D60004478B /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
 		ECA133D099F8AB81E73A0765 /* Pods-RedditReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditReader.release.xcconfig"; path = "Target Support Files/Pods-RedditReader/Pods-RedditReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				C7427D2529A048780004478B /* Session.swift */,
 				C7427D2C29A053850004478B /* NetworkError.swift */,
 				C7427D2E29A059760004478B /* Paginator.swift */,
+				C7427D4129A423D60004478B /* OAuth.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				C7427D3129A0634E0004478B /* Observable.swift in Sources */,
 				C7427D0F29A043300004478B /* SceneDelegate.swift in Sources */,
 				C7427D2A29A04BC40004478B /* Listing.swift in Sources */,
+				C7427D4229A423D60004478B /* OAuth.swift in Sources */,
 				C7427D3629A068960004478B /* PostCell.swift in Sources */,
 				C7427D2829A049450004478B /* ListService.swift in Sources */,
 				C7427D3E29A1F1BA0004478B /* ImageFetcher.swift in Sources */,
