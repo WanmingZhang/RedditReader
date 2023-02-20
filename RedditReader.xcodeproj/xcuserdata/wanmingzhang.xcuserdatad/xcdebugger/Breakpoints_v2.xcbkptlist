@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0FC98541-FDAD-41A5-9801-14D5CE33856F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CF325E5-8B1E-4687-9A48-08C6900914DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditReader/Model/Listing.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "Resolution"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6475B0B-905F-4BB1-91F1-96831EAB9AA2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditReader/Service/ImageFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "fetchImageFromUrl(_:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F6475B0B-905F-4BB1-91F1-96831EAB9AA2 - 49e91201a4912027"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in RedditReader.ImageFetcher.fetchImageFromUrl(_: Foundation.URL, completion: (Swift.Result&lt;__C.UIImage, Swift.Error&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Foundation.UUID&gt;"
+                  moduleName = "RedditReader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wanmingzhang/Desktop/RedditReader/RedditReader/Service/ImageFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "916">
+               </Location>
+               <Location
+                  uuid = "F6475B0B-905F-4BB1-91F1-96831EAB9AA2 - 49e91201a4912027"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in RedditReader.ImageFetcher.fetchImageFromUrl(_: Foundation.URL, completion: (Swift.Result&lt;__C.UIImage, Swift.Error&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Foundation.UUID&gt;"
+                  moduleName = "RedditReader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wanmingzhang/Desktop/RedditReader/RedditReader/Service/ImageFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "964">
+               </Location>
+               <Location
+                  uuid = "F6475B0B-905F-4BB1-91F1-96831EAB9AA2 - 49e91201a4912027"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in RedditReader.ImageFetcher.fetchImageFromUrl(_: Foundation.URL, completion: (Swift.Result&lt;__C.UIImage, Swift.Error&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Foundation.UUID&gt;"
+                  moduleName = "RedditReader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wanmingzhang/Desktop/RedditReader/RedditReader/Service/ImageFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "1060">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
