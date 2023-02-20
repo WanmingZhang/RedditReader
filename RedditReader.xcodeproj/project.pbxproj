@@ -79,7 +79,6 @@
 				74283135C413FE1824B14381 /* Pods-RedditReader.debug.xcconfig */,
 				ECA133D099F8AB81E73A0765 /* Pods-RedditReader.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -186,7 +185,6 @@
 				C7427D0529A043300004478B /* Sources */,
 				C7427D0629A043300004478B /* Frameworks */,
 				C7427D0729A043300004478B /* Resources */,
-				9580F2268541F11988F90C1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,23 +242,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9580F2268541F11988F90C1B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RedditReader/Pods-RedditReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RedditReader/Pods-RedditReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RedditReader/Pods-RedditReader-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B7E0DB910C787BEB51759F99 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

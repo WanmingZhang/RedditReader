@@ -4,27 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>KeychainAccess.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>OAuth2-Swift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-RedditReader.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

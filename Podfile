@@ -7,6 +7,6 @@ target 'RedditReader' do
   use_frameworks!
 
   # Pods for RedditReader
-  pod 'OAuth2-Swift'
-
+  #pod 'OAuth2-Swift'
+  #pod 'OAuthSwift'
 end
