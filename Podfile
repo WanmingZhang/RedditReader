@@ -8,5 +8,5 @@ target 'RedditReader' do
 
   # Pods for RedditReader
   #pod 'OAuth2-Swift'
-  #pod 'OAuthSwift'
+  pod 'OAuthSwift'
 end

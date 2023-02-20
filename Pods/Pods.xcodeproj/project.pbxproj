@@ -7,103 +7,273 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05B1AB4587F98221765907E638A1901A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		1D34F31F2CC717AF4B55296D026CF07C /* Pods-RedditReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C93546D8F8FDE0799466BEB34B5214C /* Pods-RedditReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56C3C2ECBC159EB398EF84DAA1A7DC0C /* Pods-RedditReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36931CCA04D849B6614BB3E822E23C32 /* Pods-RedditReader-dummy.m */; };
+		04079E90DB83DC9C45FD07B846DE5FE0 /* OAuthSwiftClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE6B3ED2E86ED0FE72434DA7D9E033F /* OAuthSwiftClient.swift */; };
+		05E7CE1FFED6BB22C6511217D2507980 /* OAuthSwiftOpenURLExternally.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B00C8CC27CCEC629983A9918340F1B /* OAuthSwiftOpenURLExternally.swift */; };
+		05EDC3C279A1544B017CD6938CFB2D32 /* OAuthSwiftCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1AC63136DE19485E618412810A60A8 /* OAuthSwiftCredential.swift */; };
+		1064021FB8A23082D02AF99206E7D7B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */; };
+		13758623D7F99DC82B511E53F46C5F2E /* String+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB060FFDFC313CA9CA7EABD08AD011 /* String+OAuthSwift.swift */; };
+		159AC399EC1D0050DB74729FFDB42C0B /* OAuth2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47559EA49BBF4BC468D7704B46DB27AE /* OAuth2Swift.swift */; };
+		1BF0F8F7DAFFA727B4BB6534E8ED44B7 /* OAuthSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96346145C0C64A96079546DFC3085271 /* OAuthSwift-dummy.m */; };
+		1CF46F48EBD83CBF692DF44E8F126A17 /* UIApplication+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC66F16F1A6B4B05F9FA6BB13CBD15 /* UIApplication+OAuthSwift.swift */; };
+		1FB4BF8CB7EBB051FD3BE85B316C8782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */; };
+		2B4FAA08AE0E23B61320B053CFF78A37 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590EA31EE1253A118DC346F27510655 /* SHA1.swift */; };
+		3CAC4A8691A3B0467731B72C43117924 /* OAuthSwiftURLHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DCE727405ED36215E99DACF266E48 /* OAuthSwiftURLHandlerType.swift */; };
+		3CFE927DCA3BC56D23E81FF442A5CC69 /* URL+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B416B9F80CEBB905778966500A24F /* URL+OAuthSwift.swift */; };
+		3E8B464AF713E386D616CADC133646CF /* Data+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F096C6C25A6CD2EA5DBA2D407F64039D /* Data+OAuthSwift.swift */; };
+		3F5CF5F5083D42EDCC9A0661E57B4CB9 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E48C499528CC9C2C571FC7261F1D3C /* URLConvertible.swift */; };
+		421E148CCC075E8D9D3F349F77960DA0 /* Dictionary+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB67D62BD1886316A8B0813F31783F4 /* Dictionary+OAuthSwift.swift */; };
+		44C85A6412C7C7309D2B3BE8AA4BA142 /* OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE22C47B30ECBCBD5F5DCCCF2C36342 /* OAuthSwift.swift */; };
+		485956FFF6E56581E1EE9B820505CFD1 /* NSError+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9213E3A2A9558A6E7250B98D228F8E1F /* NSError+OAuthSwift.swift */; };
+		4EB2E09E7F0C015451C7BEEA553B5893 /* SFAuthenticationURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72F001DE5B47F6F65D26311A9DE207 /* SFAuthenticationURLHandler.swift */; };
+		567739CADABCDE68266150A1715B2543 /* ExtensionContextURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751C4F15108C54459064F1EBC8511D41 /* ExtensionContextURLHandler.swift */; };
+		5C71D139C641AB9EF3BBF11AF0C89922 /* Pods-RedditReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF09D81558ACC161ABD2F34C3741509C /* Pods-RedditReader-dummy.m */; };
+		6F509443EE87FA85310FF366F0EA68BA /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618248B31A02A62DDC04DF0576EDCEE4 /* HMAC.swift */; };
+		76A10120241B7254B93912C28D95C543 /* SafariURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690CFD2DC505EF7232698F79065ABED2 /* SafariURLHandler.swift */; };
+		79E2C64F0A4FDBFC65851EF1C954FF71 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245D49D96309E196F8B8C406A7A1D83 /* Utils.swift */; };
+		7C2BFA9234DDF101ADF6E4D949DBFC5E /* OAuthSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 609DB1EB7DD4373A7A2044DD6287B02C /* OAuthSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8843802F9689A56D22B04BE6DFADA57B /* NotificationCenter+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FCEF45ECFC5D24FE14B751B78FE276 /* NotificationCenter+OAuthSwift.swift */; };
+		A473926953FE701BD5F2BDCA8EA98C2C /* OAuthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CF7377A07ED8EF60A6D411264C2255 /* OAuthWebViewController.swift */; };
+		B876AE2D3B4A3B5003F799BC14198B2D /* OAuthSwiftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B033F433C73B6B53E9C49E6DCCFE99 /* OAuthSwiftError.swift */; };
+		BAEC5FBB503D252A35331C5777BCCE9C /* Pods-RedditReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6071F631813958413D316B18F177FA7E /* Pods-RedditReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C59CFA5E8EA9CA89CBEECBFE9233F590 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F52E9440D6BFF0B1159CE55091460 /* SafariServices.framework */; };
+		C5A95357DA507F1BBC9415172B02F675 /* Int+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5235DFA86D22E2343DFDCF448CB030 /* Int+OAuthSwift.swift */; };
+		CBD6C136E94B691B671CCFD88CDDF3E4 /* OAuthSwiftURLHandlerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA985C6A40FF95CA9CD5A5C239EDA51 /* OAuthSwiftURLHandlerProxy.swift */; };
+		CCE4ADDFF115395994753F21F81DA30E /* ASWebAuthenticationURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158F090244DD09E1139C594F8488DA2 /* ASWebAuthenticationURLHandler.swift */; };
+		DE61D46A03FD566094F9E1C1D365B971 /* OAuthSwiftResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6498489D0BCC50F87A56BDAEE290C107 /* OAuthSwiftResponse.swift */; };
+		DF3E940C56321036792AA7CAE3012A37 /* OAuthSwiftMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8116DC7697481A781D4B548C4DC72822 /* OAuthSwiftMultipartData.swift */; };
+		ED5867C9AA73A8A0406A2DDE3E811D60 /* Collection+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE346E9D59D4F577E03F6AFC6E5D99 /* Collection+OAuthSwift.swift */; };
+		EE4EF8BD13EE304312005FA38BFBEF93 /* OAuthSwiftHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35759438645F1EF3A63BDE6DF3B52C0 /* OAuthSwiftHTTPRequest.swift */; };
+		F1ADF015CB61A847AAA4DFCB63667F1C /* OAuthLogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EEE17609A97D2D88F5F7DE98E3E9A /* OAuthLogProtocol.swift */; };
+		F604087C928AD057D10ACA70AFE11939 /* OAuth1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4895CE6BBDBB66807465145BB1655C45 /* OAuth1Swift.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A1406897471CDE5491720AF6746D8D3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C91E7D1D6000FAB10BA1FA4D7DC1553;
+			remoteInfo = OAuthSwift;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		18C84E810295BFF9AB29CBA03563CCCB /* Pods-RedditReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditReader.debug.xcconfig"; sourceTree = "<group>"; };
-		286B65038BDC05B9F4B4A62FC1A58939 /* Pods-RedditReader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RedditReader-acknowledgements.markdown"; sourceTree = "<group>"; };
-		36931CCA04D849B6614BB3E822E23C32 /* Pods-RedditReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RedditReader-dummy.m"; sourceTree = "<group>"; };
-		6C93546D8F8FDE0799466BEB34B5214C /* Pods-RedditReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RedditReader-umbrella.h"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		035DCE727405ED36215E99DACF266E48 /* OAuthSwiftURLHandlerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftURLHandlerType.swift; path = Sources/OAuthSwiftURLHandlerType.swift; sourceTree = "<group>"; };
+		069D739DA6C462A84A23BD31843155D4 /* Pods-RedditReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditReader.debug.xcconfig"; sourceTree = "<group>"; };
+		1B0EEE17609A97D2D88F5F7DE98E3E9A /* OAuthLogProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthLogProtocol.swift; path = Sources/OAuthLogProtocol.swift; sourceTree = "<group>"; };
+		1D7F52E9440D6BFF0B1159CE55091460 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		25F7EAB3C3C6F79A737D50DAA7CE5CEA /* OAuthSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OAuthSwift.modulemap; sourceTree = "<group>"; };
+		2B5235DFA86D22E2343DFDCF448CB030 /* Int+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+OAuthSwift.swift"; path = "Sources/Int+OAuthSwift.swift"; sourceTree = "<group>"; };
+		2DB67D62BD1886316A8B0813F31783F4 /* Dictionary+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+OAuthSwift.swift"; path = "Sources/Dictionary+OAuthSwift.swift"; sourceTree = "<group>"; };
+		3245D49D96309E196F8B8C406A7A1D83 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		3C1AC63136DE19485E618412810A60A8 /* OAuthSwiftCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftCredential.swift; path = Sources/OAuthSwiftCredential.swift; sourceTree = "<group>"; };
+		411E9B2BA2A61ADDB983D48252C73CBF /* OAuthSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OAuthSwift; path = OAuthSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41CFC67DA937171C9E53130DEDE5E24C /* OAuthSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-prefix.pch"; sourceTree = "<group>"; };
+		47559EA49BBF4BC468D7704B46DB27AE /* OAuth2Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Swift.swift; path = Sources/OAuth2Swift.swift; sourceTree = "<group>"; };
+		4895CE6BBDBB66807465145BB1655C45 /* OAuth1Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth1Swift.swift; path = Sources/OAuth1Swift.swift; sourceTree = "<group>"; };
+		48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5861C0FFB220D562E5C060AF0F16E746 /* Pods-RedditReader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditReader-Info.plist"; sourceTree = "<group>"; };
+		6071F631813958413D316B18F177FA7E /* Pods-RedditReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RedditReader-umbrella.h"; sourceTree = "<group>"; };
+		609DB1EB7DD4373A7A2044DD6287B02C /* OAuthSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-umbrella.h"; sourceTree = "<group>"; };
+		618248B31A02A62DDC04DF0576EDCEE4 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/HMAC.swift; sourceTree = "<group>"; };
+		6498489D0BCC50F87A56BDAEE290C107 /* OAuthSwiftResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftResponse.swift; path = Sources/OAuthSwiftResponse.swift; sourceTree = "<group>"; };
+		64CF7377A07ED8EF60A6D411264C2255 /* OAuthWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthWebViewController.swift; path = Sources/Handler/OAuthWebViewController.swift; sourceTree = "<group>"; };
+		690CFD2DC505EF7232698F79065ABED2 /* SafariURLHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariURLHandler.swift; path = Sources/Handler/SafariURLHandler.swift; sourceTree = "<group>"; };
+		6948359546B6DF4381A7B114A4FFCCB0 /* Pods-RedditReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RedditReader.modulemap"; sourceTree = "<group>"; };
+		751C4F15108C54459064F1EBC8511D41 /* ExtensionContextURLHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionContextURLHandler.swift; path = Sources/Handler/ExtensionContextURLHandler.swift; sourceTree = "<group>"; };
+		76B033F433C73B6B53E9C49E6DCCFE99 /* OAuthSwiftError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftError.swift; path = Sources/OAuthSwiftError.swift; sourceTree = "<group>"; };
 		7920C5BA311E4F029C5EF070D715FAF4 /* Pods-RedditReader */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RedditReader"; path = Pods_RedditReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CE9174CAA431A2323A7380317FD4928 /* Pods-RedditReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RedditReader.modulemap"; sourceTree = "<group>"; };
+		7C9AB96313EF22B306A4815398E6C22A /* Pods-RedditReader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RedditReader-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8116DC7697481A781D4B548C4DC72822 /* OAuthSwiftMultipartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftMultipartData.swift; path = Sources/OAuthSwiftMultipartData.swift; sourceTree = "<group>"; };
+		82E48C499528CC9C2C571FC7261F1D3C /* URLConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLConvertible.swift; path = Sources/URLConvertible.swift; sourceTree = "<group>"; };
+		86AA44F1F6F44CDCFEC04B4CF1095BCD /* OAuthSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OAuthSwift.release.xcconfig; sourceTree = "<group>"; };
+		918C1A64B4F83E6DA0BBD43BE4E4FB12 /* Pods-RedditReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditReader.release.xcconfig"; sourceTree = "<group>"; };
+		9213E3A2A9558A6E7250B98D228F8E1F /* NSError+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSError+OAuthSwift.swift"; path = "Sources/NSError+OAuthSwift.swift"; sourceTree = "<group>"; };
+		96346145C0C64A96079546DFC3085271 /* OAuthSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OAuthSwift-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B9A1FDB252213C696BD9E87A7B578C59 /* Pods-RedditReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditReader.release.xcconfig"; sourceTree = "<group>"; };
-		CE7329D6EF39CD7E89592453954C608A /* Pods-RedditReader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditReader-Info.plist"; sourceTree = "<group>"; };
-		EC0532ED63B87BBF73896B370EB368FB /* Pods-RedditReader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditReader-acknowledgements.plist"; sourceTree = "<group>"; };
+		9DE6B3ED2E86ED0FE72434DA7D9E033F /* OAuthSwiftClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftClient.swift; path = Sources/OAuthSwiftClient.swift; sourceTree = "<group>"; };
+		A2B00C8CC27CCEC629983A9918340F1B /* OAuthSwiftOpenURLExternally.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftOpenURLExternally.swift; path = Sources/Handler/OAuthSwiftOpenURLExternally.swift; sourceTree = "<group>"; };
+		A65D948066F7E586113A31A27A4FAD03 /* Pods-RedditReader-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RedditReader-frameworks.sh"; sourceTree = "<group>"; };
+		ADFB060FFDFC313CA9CA7EABD08AD011 /* String+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+OAuthSwift.swift"; path = "Sources/String+OAuthSwift.swift"; sourceTree = "<group>"; };
+		B0FCEF45ECFC5D24FE14B751B78FE276 /* NotificationCenter+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+OAuthSwift.swift"; path = "Sources/NotificationCenter+OAuthSwift.swift"; sourceTree = "<group>"; };
+		B1AB87AD6477D129DF286BD540888A60 /* OAuthSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OAuthSwift-Info.plist"; sourceTree = "<group>"; };
+		B24B416B9F80CEBB905778966500A24F /* URL+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+OAuthSwift.swift"; path = "Sources/URL+OAuthSwift.swift"; sourceTree = "<group>"; };
+		BBA985C6A40FF95CA9CD5A5C239EDA51 /* OAuthSwiftURLHandlerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftURLHandlerProxy.swift; path = Sources/Handler/OAuthSwiftURLHandlerProxy.swift; sourceTree = "<group>"; };
+		BC72F001DE5B47F6F65D26311A9DE207 /* SFAuthenticationURLHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFAuthenticationURLHandler.swift; path = Sources/Handler/SFAuthenticationURLHandler.swift; sourceTree = "<group>"; };
+		BF09D81558ACC161ABD2F34C3741509C /* Pods-RedditReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RedditReader-dummy.m"; sourceTree = "<group>"; };
+		D158F090244DD09E1139C594F8488DA2 /* ASWebAuthenticationURLHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASWebAuthenticationURLHandler.swift; path = Sources/Handler/ASWebAuthenticationURLHandler.swift; sourceTree = "<group>"; };
+		D1D86DB04F00A73B4B004A826D5BBF22 /* OAuthSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OAuthSwift.debug.xcconfig; sourceTree = "<group>"; };
+		DAE22C47B30ECBCBD5F5DCCCF2C36342 /* OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwift.swift; path = Sources/OAuthSwift.swift; sourceTree = "<group>"; };
+		DDAE346E9D59D4F577E03F6AFC6E5D99 /* Collection+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+OAuthSwift.swift"; path = "Sources/Collection+OAuthSwift.swift"; sourceTree = "<group>"; };
+		E35759438645F1EF3A63BDE6DF3B52C0 /* OAuthSwiftHTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftHTTPRequest.swift; path = Sources/OAuthSwiftHTTPRequest.swift; sourceTree = "<group>"; };
+		E590EA31EE1253A118DC346F27510655 /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/SHA1.swift; sourceTree = "<group>"; };
+		EDB47E630066B8A273BF96BD3815B8DC /* Pods-RedditReader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditReader-acknowledgements.plist"; sourceTree = "<group>"; };
+		F096C6C25A6CD2EA5DBA2D407F64039D /* Data+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+OAuthSwift.swift"; path = "Sources/Data+OAuthSwift.swift"; sourceTree = "<group>"; };
+		FDEC66F16F1A6B4B05F9FA6BB13CBD15 /* UIApplication+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+OAuthSwift.swift"; path = "Sources/UIApplication+OAuthSwift.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F9E30D91747475F8306B08CEB92726CC /* Frameworks */ = {
+		990459E7A15FF76D8672791C4E94F9D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B1AB4587F98221765907E638A1901A /* Foundation.framework in Frameworks */,
+				1FB4BF8CB7EBB051FD3BE85B316C8782 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83C3FF3AC2BE5CA90A0100A117BCEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1064021FB8A23082D02AF99206E7D7B6 /* Foundation.framework in Frameworks */,
+				C59CFA5E8EA9CA89CBEECBFE9233F590 /* SafariServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4262CD73010BFFA2909B0FD5EBCFDD6F /* Targets Support Files */ = {
+		032D3183A9824961E64256D1E3BE8FB0 /* Pods-RedditReader */ = {
 			isa = PBXGroup;
 			children = (
-				9B8B6BAC617AD2B8A615E1708D98625F /* Pods-RedditReader */,
+				6948359546B6DF4381A7B114A4FFCCB0 /* Pods-RedditReader.modulemap */,
+				7C9AB96313EF22B306A4815398E6C22A /* Pods-RedditReader-acknowledgements.markdown */,
+				EDB47E630066B8A273BF96BD3815B8DC /* Pods-RedditReader-acknowledgements.plist */,
+				BF09D81558ACC161ABD2F34C3741509C /* Pods-RedditReader-dummy.m */,
+				A65D948066F7E586113A31A27A4FAD03 /* Pods-RedditReader-frameworks.sh */,
+				5861C0FFB220D562E5C060AF0F16E746 /* Pods-RedditReader-Info.plist */,
+				6071F631813958413D316B18F177FA7E /* Pods-RedditReader-umbrella.h */,
+				069D739DA6C462A84A23BD31843155D4 /* Pods-RedditReader.debug.xcconfig */,
+				918C1A64B4F83E6DA0BBD43BE4E4FB12 /* Pods-RedditReader.release.xcconfig */,
+			);
+			name = "Pods-RedditReader";
+			path = "Target Support Files/Pods-RedditReader";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4DC98E24FD245DA7505C9B33D5BE3D1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A4EAB58FD7FB34E69645B43DE9275C8 /* OAuthSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D158F090244DD09E1139C594F8488DA2 /* ASWebAuthenticationURLHandler.swift */,
+				DDAE346E9D59D4F577E03F6AFC6E5D99 /* Collection+OAuthSwift.swift */,
+				F096C6C25A6CD2EA5DBA2D407F64039D /* Data+OAuthSwift.swift */,
+				2DB67D62BD1886316A8B0813F31783F4 /* Dictionary+OAuthSwift.swift */,
+				751C4F15108C54459064F1EBC8511D41 /* ExtensionContextURLHandler.swift */,
+				618248B31A02A62DDC04DF0576EDCEE4 /* HMAC.swift */,
+				2B5235DFA86D22E2343DFDCF448CB030 /* Int+OAuthSwift.swift */,
+				B0FCEF45ECFC5D24FE14B751B78FE276 /* NotificationCenter+OAuthSwift.swift */,
+				9213E3A2A9558A6E7250B98D228F8E1F /* NSError+OAuthSwift.swift */,
+				4895CE6BBDBB66807465145BB1655C45 /* OAuth1Swift.swift */,
+				47559EA49BBF4BC468D7704B46DB27AE /* OAuth2Swift.swift */,
+				1B0EEE17609A97D2D88F5F7DE98E3E9A /* OAuthLogProtocol.swift */,
+				DAE22C47B30ECBCBD5F5DCCCF2C36342 /* OAuthSwift.swift */,
+				9DE6B3ED2E86ED0FE72434DA7D9E033F /* OAuthSwiftClient.swift */,
+				3C1AC63136DE19485E618412810A60A8 /* OAuthSwiftCredential.swift */,
+				76B033F433C73B6B53E9C49E6DCCFE99 /* OAuthSwiftError.swift */,
+				E35759438645F1EF3A63BDE6DF3B52C0 /* OAuthSwiftHTTPRequest.swift */,
+				8116DC7697481A781D4B548C4DC72822 /* OAuthSwiftMultipartData.swift */,
+				A2B00C8CC27CCEC629983A9918340F1B /* OAuthSwiftOpenURLExternally.swift */,
+				6498489D0BCC50F87A56BDAEE290C107 /* OAuthSwiftResponse.swift */,
+				BBA985C6A40FF95CA9CD5A5C239EDA51 /* OAuthSwiftURLHandlerProxy.swift */,
+				035DCE727405ED36215E99DACF266E48 /* OAuthSwiftURLHandlerType.swift */,
+				64CF7377A07ED8EF60A6D411264C2255 /* OAuthWebViewController.swift */,
+				690CFD2DC505EF7232698F79065ABED2 /* SafariURLHandler.swift */,
+				BC72F001DE5B47F6F65D26311A9DE207 /* SFAuthenticationURLHandler.swift */,
+				E590EA31EE1253A118DC346F27510655 /* SHA1.swift */,
+				ADFB060FFDFC313CA9CA7EABD08AD011 /* String+OAuthSwift.swift */,
+				FDEC66F16F1A6B4B05F9FA6BB13CBD15 /* UIApplication+OAuthSwift.swift */,
+				B24B416B9F80CEBB905778966500A24F /* URL+OAuthSwift.swift */,
+				82E48C499528CC9C2C571FC7261F1D3C /* URLConvertible.swift */,
+				3245D49D96309E196F8B8C406A7A1D83 /* Utils.swift */,
+				6B52CABB2D898F5BDA3576F094D64D17 /* Support Files */,
+			);
+			name = OAuthSwift;
+			path = OAuthSwift;
+			sourceTree = "<group>";
+		};
+		6B52CABB2D898F5BDA3576F094D64D17 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				25F7EAB3C3C6F79A737D50DAA7CE5CEA /* OAuthSwift.modulemap */,
+				96346145C0C64A96079546DFC3085271 /* OAuthSwift-dummy.m */,
+				B1AB87AD6477D129DF286BD540888A60 /* OAuthSwift-Info.plist */,
+				41CFC67DA937171C9E53130DEDE5E24C /* OAuthSwift-prefix.pch */,
+				609DB1EB7DD4373A7A2044DD6287B02C /* OAuthSwift-umbrella.h */,
+				D1D86DB04F00A73B4B004A826D5BBF22 /* OAuthSwift.debug.xcconfig */,
+				86AA44F1F6F44CDCFEC04B4CF1095BCD /* OAuthSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OAuthSwift";
+			sourceTree = "<group>";
+		};
+		7B39EC79F06DF04B04799C76C6D1A918 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				032D3183A9824961E64256D1E3BE8FB0 /* Pods-RedditReader */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		A4DC98E24FD245DA7505C9B33D5BE3D1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */,
+				1D7F52E9440D6BFF0B1159CE55091460 /* SafariServices.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		91DCAC4FCB751F885C3E15FF625E5E2D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7920C5BA311E4F029C5EF070D715FAF4 /* Pods-RedditReader */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9B8B6BAC617AD2B8A615E1708D98625F /* Pods-RedditReader */ = {
-			isa = PBXGroup;
-			children = (
-				7CE9174CAA431A2323A7380317FD4928 /* Pods-RedditReader.modulemap */,
-				286B65038BDC05B9F4B4A62FC1A58939 /* Pods-RedditReader-acknowledgements.markdown */,
-				EC0532ED63B87BBF73896B370EB368FB /* Pods-RedditReader-acknowledgements.plist */,
-				36931CCA04D849B6614BB3E822E23C32 /* Pods-RedditReader-dummy.m */,
-				CE7329D6EF39CD7E89592453954C608A /* Pods-RedditReader-Info.plist */,
-				6C93546D8F8FDE0799466BEB34B5214C /* Pods-RedditReader-umbrella.h */,
-				18C84E810295BFF9AB29CBA03563CCCB /* Pods-RedditReader.debug.xcconfig */,
-				B9A1FDB252213C696BD9E87A7B578C59 /* Pods-RedditReader.release.xcconfig */,
-			);
-			name = "Pods-RedditReader";
-			path = "Target Support Files/Pods-RedditReader";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				91DCAC4FCB751F885C3E15FF625E5E2D /* Products */,
-				4262CD73010BFFA2909B0FD5EBCFDD6F /* Targets Support Files */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				FA4BFAB07E17DF9BC3255A3B248F6665 /* Pods */,
+				E10B3611D39C583A70DBDC1BFA313076 /* Products */,
+				7B39EC79F06DF04B04799C76C6D1A918 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E10B3611D39C583A70DBDC1BFA313076 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				411E9B2BA2A61ADDB983D48252C73CBF /* OAuthSwift */,
+				7920C5BA311E4F029C5EF070D715FAF4 /* Pods-RedditReader */,
 			);
-			name = Frameworks;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA4BFAB07E17DF9BC3255A3B248F6665 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A4EAB58FD7FB34E69645B43DE9275C8 /* OAuthSwift */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1E154D79D235462999321BC03283894A /* Headers */ = {
+		CA193F11A9D66B800EF87E9795EBD974 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D34F31F2CC717AF4B55296D026CF07C /* Pods-RedditReader-umbrella.h in Headers */,
+				BAEC5FBB503D252A35331C5777BCCE9C /* Pods-RedditReader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CCAAEEEBE462C921F77F8639E56E35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C2BFA9234DDF101ADF6E4D949DBFC5E /* OAuthSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,20 +282,39 @@
 /* Begin PBXNativeTarget section */
 		069446276FB0948A1E8F48C6D2360F22 /* Pods-RedditReader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAD37B0A180A3659F5F6E8F58722663E /* Build configuration list for PBXNativeTarget "Pods-RedditReader" */;
+			buildConfigurationList = F22EC972C702A68EFBE7BDFAA86F235D /* Build configuration list for PBXNativeTarget "Pods-RedditReader" */;
 			buildPhases = (
-				1E154D79D235462999321BC03283894A /* Headers */,
-				C9606756F8FC156AD2CA400B448DEBF6 /* Sources */,
-				F9E30D91747475F8306B08CEB92726CC /* Frameworks */,
-				CD00948290BDC6ADEC1703FC544DC8A0 /* Resources */,
+				CA193F11A9D66B800EF87E9795EBD974 /* Headers */,
+				5934E0D16234F8AF9C682F94C598541E /* Sources */,
+				990459E7A15FF76D8672791C4E94F9D1 /* Frameworks */,
+				1D70F748F066C978CE2444F883DE6142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09FBD81DFA194992842811F2C5DF1A48 /* PBXTargetDependency */,
+			);
+			name = "Pods-RedditReader";
+			productName = Pods_RedditReader;
+			productReference = 7920C5BA311E4F029C5EF070D715FAF4 /* Pods-RedditReader */;
+			productType = "com.apple.product-type.framework";
+		};
+		3C91E7D1D6000FAB10BA1FA4D7DC1553 /* OAuthSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9752E33F2C20E8876A90FA8B38D46552 /* Build configuration list for PBXNativeTarget "OAuthSwift" */;
+			buildPhases = (
+				E1CCAAEEEBE462C921F77F8639E56E35 /* Headers */,
+				CCD3D4DD7995E6A5070E5CA61D43F326 /* Sources */,
+				C83C3FF3AC2BE5CA90A0100A117BCEC4 /* Frameworks */,
+				FB4BC86AC1B281C9E6C1F8CBEBED675D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-RedditReader";
-			productName = Pods_RedditReader;
-			productReference = 7920C5BA311E4F029C5EF070D715FAF4 /* Pods-RedditReader */;
+			name = OAuthSwift;
+			productName = OAuthSwift;
+			productReference = 411E9B2BA2A61ADDB983D48252C73CBF /* OAuthSwift */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -146,17 +335,25 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 91DCAC4FCB751F885C3E15FF625E5E2D /* Products */;
+			productRefGroup = E10B3611D39C583A70DBDC1BFA313076 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3C91E7D1D6000FAB10BA1FA4D7DC1553 /* OAuthSwift */,
 				069446276FB0948A1E8F48C6D2360F22 /* Pods-RedditReader */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CD00948290BDC6ADEC1703FC544DC8A0 /* Resources */ = {
+		1D70F748F066C978CE2444F883DE6142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4BC86AC1B281C9E6C1F8CBEBED675D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,17 +363,102 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C9606756F8FC156AD2CA400B448DEBF6 /* Sources */ = {
+		5934E0D16234F8AF9C682F94C598541E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C3C2ECBC159EB398EF84DAA1A7DC0C /* Pods-RedditReader-dummy.m in Sources */,
+				5C71D139C641AB9EF3BBF11AF0C89922 /* Pods-RedditReader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD3D4DD7995E6A5070E5CA61D43F326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE4ADDFF115395994753F21F81DA30E /* ASWebAuthenticationURLHandler.swift in Sources */,
+				ED5867C9AA73A8A0406A2DDE3E811D60 /* Collection+OAuthSwift.swift in Sources */,
+				3E8B464AF713E386D616CADC133646CF /* Data+OAuthSwift.swift in Sources */,
+				421E148CCC075E8D9D3F349F77960DA0 /* Dictionary+OAuthSwift.swift in Sources */,
+				567739CADABCDE68266150A1715B2543 /* ExtensionContextURLHandler.swift in Sources */,
+				6F509443EE87FA85310FF366F0EA68BA /* HMAC.swift in Sources */,
+				C5A95357DA507F1BBC9415172B02F675 /* Int+OAuthSwift.swift in Sources */,
+				8843802F9689A56D22B04BE6DFADA57B /* NotificationCenter+OAuthSwift.swift in Sources */,
+				485956FFF6E56581E1EE9B820505CFD1 /* NSError+OAuthSwift.swift in Sources */,
+				F604087C928AD057D10ACA70AFE11939 /* OAuth1Swift.swift in Sources */,
+				159AC399EC1D0050DB74729FFDB42C0B /* OAuth2Swift.swift in Sources */,
+				F1ADF015CB61A847AAA4DFCB63667F1C /* OAuthLogProtocol.swift in Sources */,
+				44C85A6412C7C7309D2B3BE8AA4BA142 /* OAuthSwift.swift in Sources */,
+				1BF0F8F7DAFFA727B4BB6534E8ED44B7 /* OAuthSwift-dummy.m in Sources */,
+				04079E90DB83DC9C45FD07B846DE5FE0 /* OAuthSwiftClient.swift in Sources */,
+				05EDC3C279A1544B017CD6938CFB2D32 /* OAuthSwiftCredential.swift in Sources */,
+				B876AE2D3B4A3B5003F799BC14198B2D /* OAuthSwiftError.swift in Sources */,
+				EE4EF8BD13EE304312005FA38BFBEF93 /* OAuthSwiftHTTPRequest.swift in Sources */,
+				DF3E940C56321036792AA7CAE3012A37 /* OAuthSwiftMultipartData.swift in Sources */,
+				05E7CE1FFED6BB22C6511217D2507980 /* OAuthSwiftOpenURLExternally.swift in Sources */,
+				DE61D46A03FD566094F9E1C1D365B971 /* OAuthSwiftResponse.swift in Sources */,
+				CBD6C136E94B691B671CCFD88CDDF3E4 /* OAuthSwiftURLHandlerProxy.swift in Sources */,
+				3CAC4A8691A3B0467731B72C43117924 /* OAuthSwiftURLHandlerType.swift in Sources */,
+				A473926953FE701BD5F2BDCA8EA98C2C /* OAuthWebViewController.swift in Sources */,
+				76A10120241B7254B93912C28D95C543 /* SafariURLHandler.swift in Sources */,
+				4EB2E09E7F0C015451C7BEEA553B5893 /* SFAuthenticationURLHandler.swift in Sources */,
+				2B4FAA08AE0E23B61320B053CFF78A37 /* SHA1.swift in Sources */,
+				13758623D7F99DC82B511E53F46C5F2E /* String+OAuthSwift.swift in Sources */,
+				1CF46F48EBD83CBF692DF44E8F126A17 /* UIApplication+OAuthSwift.swift in Sources */,
+				3CFE927DCA3BC56D23E81FF442A5CC69 /* URL+OAuthSwift.swift in Sources */,
+				3F5CF5F5083D42EDCC9A0661E57B4CB9 /* URLConvertible.swift in Sources */,
+				79E2C64F0A4FDBFC65851EF1C954FF71 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		09FBD81DFA194992842811F2C5DF1A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			target = 3C91E7D1D6000FAB10BA1FA4D7DC1553 /* OAuthSwift */;
+			targetProxy = A1406897471CDE5491720AF6746D8D3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2476BB5411933569A1CEF14E3EB87223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069D739DA6C462A84A23BD31843155D4 /* Pods-RedditReader.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RedditReader/Pods-RedditReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RedditReader/Pods-RedditReader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		45285987FDC204B9DB7C0228892D4B3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -243,12 +525,10 @@
 			};
 			name = Debug;
 		};
-		55619956E4D71AD150F268D6D63F21D4 /* Debug */ = {
+		4C0073E9AE48CF454766771D207999CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C84E810295BFF9AB29CBA03563CCCB /* Pods-RedditReader.debug.xcconfig */;
+			baseConfigurationReference = D1D86DB04F00A73B4B004A826D5BBF22 /* OAuthSwift.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -257,23 +537,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RedditReader/Pods-RedditReader-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthSwift/OAuthSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAuthSwift/OAuthSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RedditReader/Pods-RedditReader.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/OAuthSwift/OAuthSwift.modulemap";
+				PRODUCT_MODULE_NAME = OAuthSwift;
+				PRODUCT_NAME = OAuthSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -342,9 +621,9 @@
 			};
 			name = Release;
 		};
-		E3C347442B7754839A3228EA663E7BEE /* Release */ = {
+		87CEE09B23601E8C40DEF05E833A30C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9A1FDB252213C696BD9E87A7B578C59 /* Pods-RedditReader.release.xcconfig */;
+			baseConfigurationReference = 918C1A64B4F83E6DA0BBD43BE4E4FB12 /* Pods-RedditReader.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -380,6 +659,41 @@
 			};
 			name = Release;
 		};
+		FEAA4D5FC5A956E31E5B54B040ABEDF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86AA44F1F6F44CDCFEC04B4CF1095BCD /* OAuthSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthSwift/OAuthSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAuthSwift/OAuthSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OAuthSwift/OAuthSwift.modulemap";
+				PRODUCT_MODULE_NAME = OAuthSwift;
+				PRODUCT_NAME = OAuthSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -392,11 +706,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAD37B0A180A3659F5F6E8F58722663E /* Build configuration list for PBXNativeTarget "Pods-RedditReader" */ = {
+		9752E33F2C20E8876A90FA8B38D46552 /* Build configuration list for PBXNativeTarget "OAuthSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				55619956E4D71AD150F268D6D63F21D4 /* Debug */,
-				E3C347442B7754839A3228EA663E7BEE /* Release */,
+				4C0073E9AE48CF454766771D207999CB /* Debug */,
+				FEAA4D5FC5A956E31E5B54B040ABEDF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22EC972C702A68EFBE7BDFAA86F235D /* Build configuration list for PBXNativeTarget "Pods-RedditReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2476BB5411933569A1CEF14E3EB87223 /* Debug */,
+				87CEE09B23601E8C40DEF05E833A30C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
